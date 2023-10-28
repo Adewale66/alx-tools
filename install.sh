@@ -4,15 +4,16 @@ url="https://github.com/alx-tools/Betty.git"
 
 git clone "$url"
 
-
+cd "Betty"
 
 file="install.sh"
 
 if [ -f "$file" ]; then
-        sudo "./Betty/$file"
-        cat package > Betty/betty
-        chmod a+x Betty/betty
-        sudo mv Betty/betty /bin/
+        sudo "./$file"
+        cat ../package > betty
+        chmod a+x betty
+        sudo mv betty /bin/
+	cd ..
      
 
         betty "$@"
