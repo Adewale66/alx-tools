@@ -14,9 +14,6 @@ if [ -f "$file" ]; then
         chmod a+x betty
         sudo mv betty /bin/
 	cd ..
-     
-
-        betty "$@"
 
 else
         echo "file not found $file"
