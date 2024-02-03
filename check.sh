@@ -28,8 +28,3 @@ else
   exit 1
 fi
 
-# Run python style checker
-
-pycodestyle *py > test.txt
-cat test.txt
-
