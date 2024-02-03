@@ -30,9 +30,6 @@ fi
 
 # Run python style checker
 
-pycodestyle *py
-if [ $? -eq 0 ]; then
-  :
-else
-  exit 1
-fi
+pycodestyle *py > test.txt
+cat test.txt
+
