@@ -28,3 +28,17 @@ else
   exit 1
 fi
 
+# Check for AUTHORS file
+
+if [ -e AUTHORS ]; then
+  if [ -s AUTHORS ]; then
+	:
+  else
+	echo "The AUTHORS file is empty"
+	exit 1
+  fi
+else
+  echo "The AUTHORS file does not exist"
+  exit 1
+fi
+
