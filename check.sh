@@ -2,8 +2,8 @@
 
 # Check if the file exists
 
-if [ -e .github/workflows/main.yaml ]; then
-	if [ -s .github/workflows/main.yaml ]; then
+if [ -e .github/workflows/m*.yaml ]; then
+	if [ -s .github/workflows/m*.yaml ]; then
 		:
 	else
 		echo "The YAML file is empty"
